@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+    
+}
+body{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(10, 1fr);
+    align-items: center;
+    height: 100vh;
+    border: 1px solid red;
+}
+
+.container div{
+    border-radius: 5px;
+}
+
+.container-add{
+    grid-column: 2/5;
+}
+
+.header{
+    margin: 10px;
+    background-color: white;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+ 
+
+.box{
+    background-color: white;
+   
+} 
+
+.box div{
+    padding: 10px 0;
+}
+
+select, input, button{
+    width: 80%;
+    height: 30px;
+     
+}
+
+input{
+    padding: 15px 30px;
+}
+.person{
+    position: absolute;
+    padding:10px;
+    
+}
+button{
+    
+    margin-bottom: 10px;
+    background: aquamarine;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+.container-contacts{
+    grid-column:6/10;
+    
+}
+
+.table{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+}
+
+.table div{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 10px;
+    
+}
+
+.table.empty{
+    display: block;
+    padding: 20px;
+}
+
+
+@media (max-width:1064px){
+   
+
+    .container-contacts{
+    grid-column:4/8;
+    }
+    .container-add{
+    grid-column: 4/8;
+}
+    
+
+}
