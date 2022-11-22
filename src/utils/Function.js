@@ -46,7 +46,11 @@ export const myDelete = (id)=>{
 
 }
 
-const formaGetir = (element) =>{
-    
+export const duzenleme = (element) =>{
+    const db = getDatabase(firebase)
 
+    const updates = {};
+    updates["users/" + element.id] = element;
+    
+    return update(ref(db), updates)
 }
